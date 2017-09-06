@@ -1,0 +1,23 @@
+{
+  "name": "tzne-admin",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Everton Roberto <everton_roliveira@outlook.com>"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Flot": "flot#^0.8.3",
+    "flot-spline": "^0.8.2",
+    "flot.tooltip": "^0.9.0"
+  }
+}
