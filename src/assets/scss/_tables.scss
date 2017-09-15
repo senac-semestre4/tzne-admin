@@ -1,0 +1,110 @@
+﻿.table {
+    tbody {
+        tr {
+            td, th {
+                padding: 10px;
+                border-top: 1px solid #eee;
+                border-bottom: 1px solid #eee;
+            }
+        }
+
+        tr.primary {
+            td, th {
+                background-color: #1f91f3;
+                color: #fff;
+            }
+        }
+
+        tr.success {
+            td, th {
+                background-color: #2b982b;
+                color: #fff;
+            }
+        }
+
+        tr.info {
+            td, th {
+                background-color: #00b0e4;
+                color: #fff;
+            }
+        }
+
+        tr.warning {
+            td, th {
+                background-color: #ff9600;
+                color: #fff;
+            }
+        }
+
+        tr.danger {
+            td, th {
+                background-color: #fb483a;
+                color: #fff;
+            }
+        }
+    }
+
+    thead {
+        tr {
+            th {
+                padding: 10px;
+                border-bottom: 1px solid #eee;
+            }
+        }
+    }
+}
+
+.table-bordered {
+    border-top: 1px solid #eee;
+
+    tbody {
+        tr {
+            td, th {
+                padding: 10px;
+                border: 1px solid #eee;
+            }
+        }
+    }
+
+    thead {
+        tr {
+            th {
+                padding: 10px;
+                border: 1px solid #eee;
+            }
+        }
+    }
+}
+
+/* tabela nas telas de chamada*/
+.table-called{
+    thead, tfoot{
+        tr{
+            th:last-of-type{
+                text-align: center;
+            }
+            th:first-of-type{
+                width: 60px !important;
+                text-align: center;
+            }
+        }
+    }
+    tbody {
+        tr{
+            td:last-of-type{
+                text-align: center;
+            }
+            td:first-of-type{
+                width: 60px !important;
+                text-align: center;
+                
+                [type="checkbox"].filled-in:not(:checked) + label:after,
+                [type="checkbox"].filled-in:checked + label:after,  
+                [type="checkbox"].filled-in:checked + label:before{
+                    position: absolute;
+                    top: 10px;
+                }
+            }
+        }
+    }
+}

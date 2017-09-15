@@ -1,0 +1,70 @@
+<div class="header align-right m-b-10">
+    <button type="button" class="btn bg-blue waves-effect">
+        <i class="material-icons">save</i>
+        <span>SALVAR</span>
+    </button>
+    <button type="button" class="btn bg-orange waves-effect">
+        <i class="material-icons">replay</i>
+        <span>CANCELAR</span>
+    </button>
+</div>
+<div class="body">
+    <form>
+        <div class="row clearfix m-b-5">
+            <div class="form-group form-float">
+                <div class="col-xs-12">
+                    <div class="form-line">
+                        <input type="text" id="nome_produto" class="form-control">
+                        <label class="form-label">Nome Produto</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix m-b-10">
+            <div class="form-group form-float">
+                <div class="col-xs-12">
+                    <div class="form-line">
+                        <input type="password" id="codigo_produto" class="form-control">
+                        <label class="form-label">Código Produto</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row clearfix m-b-10">
+            <div class="col-xs-12">
+                <div class="form-group form-float">
+                    <label>Descrição</label>
+                    <app-ckeditor></app-ckeditor>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix m-b-10">
+            <div class="col-xs-12">
+                <div class="form-group form-float">
+                    <label>Especificação</label>
+                    <app-ckeditor></app-ckeditor>
+                </div>
+            </div>
+        </div>
+
+        <div class="row clearfix">
+            <div class="col-xs-12 col-sm-6 ">
+                <select class="form-control show-tick">
+                    <option value="">Marca</option>
+                    <option value="10">Marca 1</option>
+                    <option value="20">Marca 2</option>
+                    <option value="30">Marca 3</option>
+                </select>
+            </div>
+            <div class="col-xs-12 col-sm-6 ">
+                <select class="form-control show-tick">
+                    <option value="">Departamento</option>
+                    <option value="10">Departamento 1</option>
+                    <option value="20">Departamento 2</option>
+                    <option value="30">Departamento 3</option>
+                </select>
+            </div>
+        </div>
+    </form>
+</div>
