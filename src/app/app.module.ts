@@ -1,8 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { CKEditorModule } from 'ng2-ckeditor';
 
+import { CKEditorModule } from 'ng2-ckeditor';
+import { DataTableModule } from 'angular2-datatable';
 //import { MaterializeModule } from 'angular2-materialize';
 //import { AlertModule } from 'ngx-bootstrap';
 import { CountoModule }  from 'angular2-counto';
@@ -63,6 +64,7 @@ import { CkeditorComponent } from './common/components/ckeditor/ckeditor.compone
     BrowserModule,
     FormsModule,
     CKEditorModule,
+    DataTableModule,
     //MaterializeModule,
     //AlertModule.forRoot(),
     CountoModule,

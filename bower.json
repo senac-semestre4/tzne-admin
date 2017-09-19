@@ -18,6 +18,8 @@
   "dependencies": {
     "Flot": "flot#^0.8.3",
     "flot-spline": "^0.8.2",
-    "flot.tooltip": "^0.9.0"
+    "flot.tooltip": "^0.9.0",
+    "animate.css": "^3.5.2",
+    "font-awesome": "^4.7.0"
   }
 }

@@ -5,7 +5,8 @@
     .form-line {
         display: inline-block;
         width: 100%;
-        border-bottom: 1px solid #ddd;
+        border: 1px solid #ddd;
+        border-radius: 3px;
         position: relative;
 
         &:after {
@@ -16,7 +17,7 @@
             bottom: -2px;
             @include transform(scaleX(0));
             @include transition(0.25s ease-in);
-            border-bottom: 2px solid #1f91f3;
+            border: 1px solid #1f91f3;
         }
 
         + .input-group-addon {
@@ -25,7 +26,7 @@
         }
     }
 
-    .help-info {
+    .he2lp-info {
         float: right;
         font-size: 12px;
         margin-top: 5px;
@@ -42,19 +43,19 @@
 
     .form-line.error {
         &:after {
-            border-bottom: 2px solid #F44336;
+            border: 1px solid #F44336;
         }
     }
 
     .form-line.success {
         &:after {
-            border-bottom: 2px solid #4CAF50;
+            border: 1px solid #4CAF50;
         }
     }
 
     .form-line.warning {
         &:after {
-            border-bottom: 2px solid #FFC107;
+            border: 1px solid #FFC107;
         }
     }
 
@@ -137,13 +138,13 @@
 
 .form-group {
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 0;
 
     .form-control {
         width: 100%;
         border: none;
         box-shadow: none;
-        // border-bottom: 1px solid #ddd;
+        // border: 1px solid #ddd;
         @include border-radius(0);
         padding-left: 0;
     }
@@ -166,7 +167,8 @@
     .form-line {
         width: 100%;
         position: relative;
-        border-bottom: 1px solid #ddd;
+        border: 1px solid #ddd;
+        border-radius: 3px;
 
         &:after {
             content: '';
@@ -177,7 +179,7 @@
             bottom: -1px;
             @include transform(scaleX(0));
             @include transition(0.25s ease-in);
-            border-bottom: 2px solid #1f91f3;
+            border: 1px solid #1f91f3;
         }
 
         .form-label {
@@ -185,7 +187,7 @@
             color: #aaa;
             position: absolute;
             top: 10px;
-            left: 0;
+            left: 10px;
             cursor: text;
             @include transition(0.2s);
         }
@@ -193,19 +195,19 @@
 
     .form-line.error {
         &:after {
-            border-bottom: 2px solid #F44336;
+            border: 1px solid #F44336;
         }
     }
 
     .form-line.success {
         &:after {
-            border-bottom: 2px solid #4CAF50;
+            border: 1px solid #4CAF50;
         }
     }
 
     .form-line.warning {
         &:after {
-            border-bottom: 2px solid #FFC107;
+            border: 1   px solid #FFC107;
         }
     }
 
@@ -215,8 +217,8 @@
         }
 
         .form-label {
-            top: -10px;
-            left: 0;
+            top: -20px;
+            left: 10px;
             font-size: 12px;
         }
     }
