@@ -1,19 +1,19 @@
 ﻿//Margin
 @for $i from 0 through 30 {
     .m-l-#{$i} {
-        margin-left: #{$i}px;
+        margin-left: #{$i}px !important;
     }
 
     .m-t-#{$i} {
-        margin-top: #{$i}px;
+        margin-top: #{$i}px !important;
     }
 
     .m-r-#{$i} {
-        margin-right: #{$i}px;
+        margin-right: #{$i}px !important;
     }
 
     .m-b-#{$i} {
-        margin-bottom: #{$i}px;
+        margin-bottom: #{$i}px !important;
     }
 }
 
@@ -23,50 +23,50 @@
 
 @for $i from 0 through 30 {
     .p-l-#{$i} {
-        padding-left: #{$i}px;
+        padding-left: #{$i}px !important;
     }
 
     .p-t-#{$i} {
-        padding-top: #{$i}px;
+        padding-top: #{$i}px !important;
     }
 
     .p-r-#{$i} {
-        padding-right: #{$i}px;
+        padding-right: #{$i}px !important;
     }
 
     .p-b-#{$i} {
-        padding-bottom: #{$i}px;
+        padding-bottom: #{$i}px !important;
     }
 }
 
 .padding-0 {
-    padding: 0;
+    padding: 0 !important;
 }
 
 @for $i from 5 through 49 {
     .font-#{$i + 1} {
-        font-size: #{$i + 1}px;
+        font-size: #{$i + 1}px !important;
     }
 }
 
 .align-left {
-    text-align: left;
+    text-align: left !important;
 }
 
 .align-center {
-    text-align: center;
+    text-align: center !important;
 }
 
 .align-right {
-    text-align: right;
+    text-align: right !important;
 }
 
 .align-justify {
-    text-align: justify;
+    text-align: justify !important;
 }
 
 .no-resize {
-    resize: none;
+    resize: none !important;
 }
 
 

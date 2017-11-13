@@ -2,7 +2,7 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule }  from '@angular/router';
 
 import { Erro404Component } from './pages/erro-404/erro-404.component';
-import { DashboardComponent } from "./dashboard/dashboard.component";
+import { DashboardComponent } from "./pages/dashboard/dashboard.component";
 
 const appRoutes: Routes = [
   { path: '', pathMatch: 'full', component:  DashboardComponent},

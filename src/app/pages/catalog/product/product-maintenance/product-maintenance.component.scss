@@ -1,0 +1,15 @@
+.btn-deletar-cor-tamanho{
+    padding: 5px 12px;
+}
+
+.table-responsive {
+    overflow-x: visible;
+    table{
+        tr{
+            td{
+                max-width: 70px;
+                padding: 5px 10px;
+            }
+        }
+    }
+}

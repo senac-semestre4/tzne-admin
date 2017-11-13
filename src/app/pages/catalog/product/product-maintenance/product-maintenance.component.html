@@ -1,0 +1,297 @@
+<div class="header align-right">
+    <button type="button" class="btn bg-blue waves-effect">
+        <i class="material-icons">save</i>
+        <span>SALVAR</span>
+    </button>
+    <button type="button" class="btn bg-orange waves-effect">
+        <i class="material-icons">replay</i>
+        <span>CANCELAR</span>
+    </button>
+</div>
+<div class="p-l-5 p-r-5">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation">
+            <a href="#geral" data-toggle="tab">
+                <i class="material-icons">settings</i> GERAL
+            </a>
+        </li>
+        <li role="presentation" class="active">
+            <a href="#opcoes" data-toggle="tab">
+                <i class="material-icons">add_box</i> OPÇÕES
+            </a>
+        </li>
+    </ul>
+</div>
+<!-- Tab panes -->
+<div class="body">
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in" id="geral">
+            <form class="p-l-10 p-r-10">
+                <div class="row clearfix">
+                    <div class="header-description">
+                        <h3>Descrição do Produto</h3>
+                    </div>
+                </div>
+                <!-- NOME PRODUTO -->
+                <div class="row clearfix m-b-20">
+                    <div class="form-group form-float">
+                        <div class="col-xs-12">
+                            <div class="form-line">
+                                <input type="text" id="nome_produto" class="form-control">
+                                <label class="form-label">* Nome Produto</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END# NOME PRODUTO -->
+
+                <!-- CÓDIGO PRODUTO -->
+                <div class="row clearfix m-b-20">
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="form-group form-float">
+                            <select class="form-control show-tick">
+                                <option value="">Modelo</option>
+                                <option value="mdl1">Modelo 1</option>
+                                <option value="mdl2">Modelo 2</option>
+                                <option value="mdl3">Modelo 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="form-group form-float">
+                            <div class="form-line">
+                                <input type="password" id="codigo_produto" class="form-control">
+                                <label class="form-label">Código Produto</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END# CÓDIGO PRODUTO -->
+
+                <!-- DESCRIÇÃO -->
+                <div class="row clearfix m-b-20">
+                    <div class="col-xs-12">
+                        <label>Descrição</label>
+                        <!-- <ckeditor [(ngModel)]="ckeditorContent" (change)="onChange($event)" (ready)="onReady($event)" (focus)="onFocus($event)" (blur)="onBlur($event)"
+                            debounce="500">
+                        </ckeditor> -->
+                    </div>
+                </div>
+                <!--END# DESCRIÇÃO -->
+
+                <!-- ESPECIFICAÇÃO -->
+                <div class="row clearfix m-b-20">
+                    <div class="col-xs-12">
+                        <div class="form-group form-float">
+                            <label>Especificação</label>
+                            <!-- <ckeditor [(ngModel)]="ckeditorContent" (change)="onChange($event)" (ready)="onReady($event)" (focus)="onFocus($event)" (blur)="onBlur($event)"
+                                debounce="500">
+                            </ckeditor> -->
+                        </div>
+                    </div>
+                </div>
+                <!--END# ESPECIFICAÇÃO -->
+
+                <!-- MARCA E DEPARTAMENTO -->
+                <div class="row clearfix m-b-20">
+                    <div class="col-xs-12 col-sm-6">
+                        <select class="form-control show-tick">
+                            <option value="">Marca</option>
+                            <option value="10">Marca 1</option>
+                            <option value="20">Marca 2</option>
+                            <option value="30">Marca 3</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <select class="form-control show-tick">
+                            <option value="">Departamento</option>
+                            <option value="10">Departamento 1</option>
+                            <option value="20">Departamento 2</option>
+                            <option value="30">Departamento 3</option>
+                        </select>
+                    </div>
+                </div>
+                <!--END# MARCA E DEPARTAMENTO -->
+
+                <!-- VALORES -->
+                <div class="row clearfix">
+                    <div class="header-description">
+                        <h3>Valores</h3>
+                    </div>
+                    <div class="form-group form-float">
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="form-line m-b-20">
+                                <input type="text" id="valor_compra" class="form-control">
+                                <label class="form-label">Valor de compra</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group form-float">
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="form-line m-b-20">
+                                <input type="text" id="margem_venda" class="form-control">
+                                <label class="form-label">Margem de venda</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group form-float">
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="form-line">
+                                <input type="text" id="valor_venda" class="form-control">
+                                <label class="form-label">* Valor de venda</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END# VALORES -->
+                <!--DIMENSÕES -->
+                <div class="row clearfix">
+                    <div class="header-description">
+                        <h3>Dimensões</h3>
+                    </div>
+                    <div class="form-group form-float">
+                        <div class="col-xs-12 col-sm-3">
+                            <div class="form-line m-b-20">
+                                <input type="text" id="comprimento" class="form-control">
+                                <label class="form-label">Comprimento</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group form-float">
+                        <div class="col-xs-12 col-sm-3">
+                            <div class="form-line m-b-20">
+                                <input type="text" id="largura" class="form-control">
+                                <label class="form-label">Largura</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group form-float">
+                        <div class="col-xs-12 col-sm-3">
+                            <div class="form-line m-b-20">
+                                <input type="text" id="altura" class="form-control">
+                                <label class="form-label">Altura</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group form-float">
+                        <div class="col-xs-12 col-sm-3">
+                            <div class="form-line">
+                                <input type="text" id="peso" class="form-control">
+                                <label class="form-label">Peso</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <div role="tabpanel" class="tab-pane fade in active" id="opcoes">
+            <form class="p-l-10 p-r-10">
+                <div class="row clearfix">
+                    <div class="header-description">
+
+                    </div>
+                </div>
+                <!-- CORPO DO CARD (AQUI SERÁ CRIADO OS COMPONENTES)-->
+                <div class="body">
+                    <div id="promocao" class="card">
+                        <div class="header bg-teal p-t-5 p-b-5">
+                            <p class="margin-0 font-16  ">Promoção</p>
+                        </div>
+                        <div class="body">
+                            <div class="row clearfix m-t-20">
+                                <div class="form-group form-float">
+                                    <div class="col-xs-12 col-sm-5">
+                                        <div class="form-line m-b-20 ">
+                                            <input type="text" id="valor_promocional" class="form-control">
+                                            <label class="form-label">* Valor Promocional</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group form-float">
+                                    <div class="col-xs-12 col-sm-5">
+                                        <div class="form-line m-b-20">
+                                            <input type="text" id="valor_promocional" class="form-control">
+                                            <label class="form-label">* Desconto (%)</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-2 align-center">
+                                    <button type="button" class="btn bg-red waves-effect red">
+                                        <i class="material-icons">delete</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="cor" class="card">
+                        <div id="promocao" class="card">
+                            <div class="header bg-teal p-t-5 p-b-5">
+                                <p class="margin-0 font-16  ">Cores e tamanhos</p>
+                            </div>
+                            <div class="body">
+                                <div class="row clearfix m-t-20">
+                                    <div class="table-responsive">
+                                        <table class="table" id="table_cor_tamanho">
+                                            <thead>
+                                                <tr>
+                                                    <th>Cor</th>
+                                                    <th>Tamanho</th>
+                                                    <th>Estoque</th>
+                                                    <th class="align-center">Ação</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr *ngFor="let cr of linhaCorETamanho, let i = index">
+                                                    <td>
+                                                        <select class="form-control show-tick" name="cor">
+                                                            <option value="selecione">Selecione</option>
+                                                            <option value="cor-{{ cor.id }}" *ngFor="let cor of cores">
+                                                                {{ cor.nome }}
+                                                            </option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select class="form-control show-tick" name="tamanho">
+                                                            <option value="selecione">Selecione</option>
+                                                            <option value="tamanho-{{ tamanho.id }}" *ngFor="let tamanho of tamanhos">
+                                                                {{ tamanho.nome }}
+                                                            </option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <input type="number" id="estoque" class="form-control">
+                                                    </td>
+                                                    <td class="align-center">
+                                                        <button type="button" class="btn bg-red waves-effect red btn-deletar-cor-tamanho" 
+                                                        (click)="removeLinha(i)">
+                                                            <i class="material-icons">delete</i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <td colspan="4">
+                                                        <button type="button" class="btn bg-teal waves-effect right" (click)="inserirLinha()">
+                                                            <span>Mais Cores</span>
+                                                            <i class="material-icons">add</i>
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END# CORPO DO CARD -->
+            </form>
+        </div>
+    </div>
+</div>
